@@ -77,6 +77,43 @@ A check-in can be thought of as an historical snapshot of a check-out.
 
 When used as a noun, the word "commit" is another synonym for "check-in". When used as a verb, the word "commit" means to create a new check-in.
 
+Every check-in and every individual file has a unique name - its SHA1 or SHA3-256 hash. Team members can unambiguously identify any specific version of the overall project or any specific version of an individual file.
+
+Any historical version of the whole project or of any individual file can be easily recreated at any time and by any team member.
+
+Accidental changes to files can be detected by recomputing their cryptographic hash.
+
+Files of unknown origin can be identified using their hash.
+
+Developers are able to work in parallel, review each others work, and easily merge their changes together. External revisions to the baseline can be easily incorporated into the latest changes.
+
+Developers can follow experimental lines of development, then revert back to an earlier stable version if the experiment does not work out. Creativity is enhanced by allowing crazy ideas to be investigated without destabilizing the project.
+
+Developers can work on several independent subprojects, flipping back and forth from one subproject to another at will, and merge patches together or back into the main line of development as they mature.
+
+Older changes can be easily backed out of recent revisions, for example if bugs are found long after the code was committed.
+
+Enhancements in a branch can be easily copied into other branches, or into the trunk.
+
+The complete history of all changes is plainly visible to all team members. Project leaders can easily keep track of what all team members are doing. Check-in comments help everyone to understand and/or remember the reason for each change.
+
+New team members can be brought up-to-date with all of the historical code, quickly and easily.
+
+New developers, interns, or inexperienced staff members who still do not understand all the details of the project or who are otherwise prone to making mistakes can be assigned significant subprojects to be carried out in branches without risking main line stability.
+
+Code is automatically synchronized across all machines. No human effort is wasted copying files from machine to machine. The risk of human errors during file transfer and backup is eliminated.
+
+A hardware failure results in minimal lost work because all previously committed changes will have been automatically replicated on other machines.
+
+The complete work history of the project is conveniently archived in a single file, simplifying long-term record keeping.
+
+A precise historical record is maintained which can be used to support copyright and patent claims or regulatory compliance.
+
+
+
+
+
+
 
 
 
